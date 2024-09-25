@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Raffle DApp</h1>
+        
+        <!-- Raffle status section -->
+        <div id="status">
+            <h3>Raffle Status: <span id="raffleStatus"></span></h3>
+            <h3>Recent Winner: <span id="recentWinner"></span></h3>
+        </div>
+        
+        <!-- Enter raffle section -->
+        <div id="enterRaffle">
+            <h3>Entrance Fee: <span id="entranceFee"></span> ETH</h3>
+            <button id="enterBtn">Enter Raffle</button>
+        </div>
+
+        <!-- Raffle participants section -->
+        <div id="players">
+            <h3>Number of Players: <span id="numPlayers"></span></h3>
+        </div>
+
+        <!-- Connect wallet section -->
+        <div id="wallet">
+            <button id="connectBtn">Connect Wallet</button>
+            <span id="account"></span>
+        </div>
+    </div>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
